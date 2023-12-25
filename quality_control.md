@@ -28,7 +28,7 @@ head(colnames(Patient_OC))
 table(Patient_OC$orig.ident) 
 ```
 
-### Start Quality Control
+### Quality Control
 ```
 dir.create("QC")
 
