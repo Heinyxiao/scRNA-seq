@@ -8,6 +8,7 @@ My analyses include:
     **Quanlity control**
     **Normalizaiton**
     **Dimension Reduction**
+    **Differential expresison testing**
     **Cell type assignment**
     **Ligand-receptor interaction**
 
