@@ -84,6 +84,6 @@ ggsave("QC/vlnplot_after_qc.pdf", plot = violin, width = 12, height = 6)
 ggsave("QC/vlnplot_after_qc.png", plot = violin, width = 12, height = 6)
 
 # Save RDS file
-saveRDS(Patient_OC, file="T59.rds")
+saveRDS(Patient_OC, file="Patient_OC.rds")
 
 ```
