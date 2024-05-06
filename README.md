@@ -1,15 +1,15 @@
-# Single-cell RNA sequencing analysis toolkit
-This repository covers the scRNA-seq analyses done for my thesis research. I performed single-cell RNA sequencing using primary ovarian cancer (OC) cells and primary cancer-associated fibroblasts (CAFs), and analyzed ligand-receptor interactions between OC cells and CAFs in co-cultured vs mono-cultured conditions.   
+# Single-cell RNA sequencing analysis
+This repository covers the scRNA-seq analyses done for ovarian tumor microenvironment research. Single-cell RNA sequencing was performed using primary ovarian cancer (OC) cells and primary cancer-associated fibroblasts (CAFs). The bioinformatics analysis uncovered ligand-receptor interactions between OC cells and CAFs.   
 
-My analyses include: 
+Workflow:
 
 + **Human Genome Alignment**
 + **Dataset Integration**
 + **Imputation**
-+ **Quanlity Control**
-+ **Normalizaiton**
-+ **Dimension Reduction**
-+ **Differential Expresison (DE) Testing**
++ **Quality Control**
++ **Data Normalizaiton**
++ **Dimensional Reduction**
++ **Differential Expresison Testing**
 + **Cell Type Assignment**
-+ **Ligand-Receptor Interaction**
++ **Ligand-Receptor Interaction Analysis**
 
