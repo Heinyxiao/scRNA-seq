@@ -1,0 +1,43 @@
+---
+title: "scRNAseq_data_format_convert"
+output: html_document
+date: "2024-05-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Set working directory
+```{r}
+setwd("/Users/xuexiao/Desktop/Lab/Projects/Dedifferentiation/Data")
+```
+
+
+## Install 
+Thanks to https://zqfang.github.io/2020-04-28-seurat2scanpy/
+
+```{r, eval=FALSE, message=FALSE, warning=FALSE}
+#remotes::install_github("mojaveazure/seurat-disk")
+#BiocManager::install("scater")
+#BiocManager::install("SingleCellExperiment")
+remotes::install_github("zqfang/MuDataSeurat", force = T)
+```
+
+```{r}
+library(Seurat)
+library(reticulate)
+library(SeuratDisk)
+library(scater)
+```
+## Format conversion
+
+#### Seurat -> AnnData
+```{r}
+# Load data
+seurat_object <- readRDS("/Users/xuexiao/Desktop/Lab/Projects/Dedifferentiation/Data/Cancer_cell_in_house_magic_cytotrace.rds")
+# Convert to .h5ad file
+MuDataSeurat::WriteH5AD(seurat_object, "/Users/xuexiao/Desktop/Lab/Projects/Dedifferentiation/Data/Cancer_cell_in_house_magic_cytotrace.h5ad", assay="RNA")
+```
+
+
